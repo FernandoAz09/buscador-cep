@@ -3,3 +3,9 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+
+:root {
+  --black: #121212;
+  --blue: #212B46;
+  --white: #FFFFFF;
+}
