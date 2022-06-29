@@ -30,4 +30,42 @@ body {
     font-weight: 700;
     font-size: 85px;
     line-height: 103px;
+    margin-bottom: 35px;
+}
+
+.main input::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F1F1F1;
+    padding-left: 16px;
+}
+
+.main input {
+    position: relative;
+    width: 410px;
+}
+
+.input {
+    position: relative;
+}
+
+.input input {
+    height: 48px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.45);
+    border-radius: 8px;
+}
+
+.main button.submit {
+    position: absolute;
+    top: 24%;
+    right: 10px;
+    z-index: 10;
+    border: none;
+    background: transparent;
+    outline: none;
 }
