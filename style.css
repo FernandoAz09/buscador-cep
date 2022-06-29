@@ -11,13 +11,23 @@
     --white: #FFFFFF;
 }
 
-.main {
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
+body {
     background: linear-gradient(to bottom, #121212, #212B46);
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main h1 {
     color: var(--white);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 103px;
 }
