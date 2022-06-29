@@ -13,15 +13,24 @@
 
 body {
     background: linear-gradient(to bottom, #121212, #212B46);
+    height: 100vh;
 }
 
 .main {
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: height 400ms ease-in-out;
+
+}
+
+.main.active {
+    height: 100vh;
+    transition: height 400ms ease-in-out;
 }
 
 .main h1 {
@@ -68,4 +77,32 @@ body {
     border: none;
     background: transparent;
     outline: none;
+}
+
+.adress {
+    margin: 0 auto;
+    width: 588px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    text-align: center;
+}
+
+body>section>div>h3 {
+    padding: 35px 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--black);
+}
+
+section>div>p {
+    padding: 18px 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 8px;
+    color: var(--black);
+}
+
+section>div>p:last-child {
+    padding-bottom: 30px;
 }
