@@ -12,7 +12,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #121212, #212B46);
+    background: linear-gradient(to bottom, #121212, #212B46) ;
     height: 100vh;
 }
 
@@ -50,6 +50,10 @@ body {
     line-height: 19px;
     color: #F1F1F1;
     padding-left: 16px;
+}
+
+.main .input[type="text"] {
+    padding-left: 10px;
 }
 
 .main input {
