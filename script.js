@@ -23,6 +23,44 @@
 //         alert("CEP errado ou não encontrado.");
 //     }
 // }
+// function inputClear() {
+//     //Limpa valores do formulário de cep.
+//     document.getElementById('cep').value=("");
+// }
+
+// function cep_Callback(result) {
+//     if (!("erro" in result)) {
+//         //Atualiza os campos com os valores.
+//         document.getElementById('cep').value=(result.cep);
+//         document.getElementById('logradouro').value=(result.logradouro);
+//         document.getElementById('bairro').value=(result.bairro);
+//         document.getElementById('localidade').value=(result.localidade);
+//     } 
+//     else {
+//         //CEP não Encontrado.
+//         limpa_formulário_cep();
+//         alert("CEP errado ou não encontrado.");
+//     }
+// }
+
+
+// const pesquisarCep = () => {
+//     const cep = inputCep.value.replace(/\D/g, '')
+//     const url = `viacep.com.br/ws/${cep}/json/ `
+//     console.log(url)
+//     if (cep === "") {
+//         alert("Digite um cep para continuar.")
+//         inputCep = ''
+//     }
+// }
+
+
+// let subButton = document.getElementById('submit').addEventListener('click', pesquisarCep)
+
+
+/* base de pesquisa*/
+
+// function pesquisacep(valor) {
 
 
 // const pesquisarCep = (value) => {
