@@ -1,6 +1,6 @@
 # DevMentor Brasil - Buscador de CEP
 
-## Bem vindo! 👋
+## Bem vindo! 
 
 Obrigado por conferir este desafio e usar nossa plataforma DevMentor.
 
