@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Adicionando JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
@@ -18,14 +21,12 @@
 
 <body>
 
-    <main>
+    <!-- <main>
 
         <div class="main">
             <h1>Buscador CEP</h1>
 
-            <div class="input">
-
-                <input id="cep" type="tel" placeholder="Digite seu cep...">
+            <div class="p" placeholder="Digite seu cep..." onblur="pesquisarCep(this.value)" value="">
                 <button id="submit">
                     <img src="assets/img/Button.png" alt="">
                 </button>
@@ -34,20 +35,41 @@
 
         </div>
 
-    </main>
+    </main> -->
 
-    <section class="api-res ">
+    <form method="get" action=".">
+        <label>Cep:
+            <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" />
+        </label>
+    </form>    
+    <div class="adress hiden">
+        <form method="get" action=".">
+            <label>Cep:
+                <p  id="cep" value="" size="10" maxlength="9" />
+            </label>
+            <br>
 
-        <div class="adress ">
-            <h3>CEP: 22050-900</h3>
-            <p>Avenida Nossa Senhora de Copacabana</p>
-            <p>Complemento: 680</p>
-            <p>Copacabana</p>
-            <p>Rio de Janeiro - RJ</p>
-        </div>
+            <label>Rua:
+                <p  id="rua"> </p>
+            </label>
+            <br>
 
-    </section>
+            <label>Bairro:
+                <p  id="bairro"> </p>
+            </label>
+            <br>
 
+            <label>Cidade:
+                <p  id="cidade"> </p>
+            </label>
+            <br>
+
+            <label>Estado:
+                <p  id="uf"> </p>
+            </label>
+            <br>
+        </form>
+    </div>
 
     <script type="text/javascript" src=script.js></script>
 </body>
