@@ -2,9 +2,13 @@ let inputCep = document.getElementById('cep')
 
 
 const pesquisarCep = () => {
-    const cep = inputCep.value 
+    const cep = inputCep.value.replace(/\D/g, '')
     const url = `viacep.com.br/ws/${cep}/json/ `
     console.log(url)
+    if (cep === "") {
+        alert("Digite um cep para continuar.")
+        inputCep = ''
+    }
 }
 
 let subButton = document.getElementById('submit').addEventListener('click', pesquisarCep)
